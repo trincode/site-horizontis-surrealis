@@ -4,44 +4,94 @@ body {
     background-color: aqua;
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-main {
-}
+
 
 .rotacao-de-foto {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
+    z-index: -1;
 }
 
-.rotacao-de-foto .foto {
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding: 50px 40px;
 
 }
 
 .conteiner .conteudo {
     display: none;
+    color: #ffffff;
+    margin-top: 100px;
+    width: 100%;
+    min-width: 363px;
+    background-color: violet;
 }
 
 .conteiner .conteudo.ativo {
     display: block;
 }
 
-.conteiner {
-    background-color: chartreuse;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 100vh;
-}
-
 .conteudo .titulo {
     background-color: crimson;
+    font-family: "Rudisfave demo", serif;
+    font-weight: 300;
     font-size: 3rem;
-    color: #ffffff;
-    margin-bottom: 50px;
+    letter-spacing: 1px;
 }
 
+@font-face {
+    font-family: "Rudisfave demo";
+    src: url(../fontes/Rudisfave\ demo.ttf);
+    src: url(../fontes/Rudisfave\ demo.otf);
+}
 
+.conteudo .slogan {
+    font-size: 1.7rem;
+    margin: 10px 0 40px;
+
+}
+
+.conteudo .descricao {
+    background-color: lightskyblue;
+    width: 60%;
+    min-width: 363px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    height: 200px;
+    overflow: auto;
+}
+
+.botoes-da-rotacao {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-da-rotacao .botao {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.botoes-da-rotacao .botao.ativo {
+    background-color: green;
+}
+
+.rotacao-de-foto .foto {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
