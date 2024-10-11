@@ -30,7 +30,7 @@ body {
 .conteiner .conteudo {
     display: none;
     color: #ffffff;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     min-width: 363px;
     background-color: violet;
@@ -56,8 +56,9 @@ body {
 
 .conteudo .slogan {
     font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 400;
     margin: 10px 0 40px;
-
 }
 
 .conteudo .descricao {
@@ -65,9 +66,20 @@ body {
     width: 60%;
     min-width: 363px;
     font-size: 1.4rem;
+    font-weight: 500;
     line-height: 1.4rem;
     height: 200px;
     overflow: auto;
+}
+
+.conteiner .botao-assistir {
+    margin: 0 0% 0 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
 }
 
 .botoes-da-rotacao {
