@@ -1,7 +1,6 @@
 body {
     font-family: "Afacad Flux", sans-serif;
     font-size: 62.5%;
-    background-color: aqua;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -106,4 +105,30 @@ body {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
+    display: none;
+}
+
+.rotacao-de-foto .foto.ativa {
+    display: block;
+    animation: fadeInImagem 0.7s;
+}
+
+@keyframes fadeInImagem {
+    0% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+main::after {
+    content: url('');
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(304deg, rgba(0,0,0,1) 0%, rgba(250,250,250,0) 40%, rgba(255,255,255,0) 50%, rgba(250,250,250,0) 60%, rgba(0,0,0,1) 100%);
+    z-index: -1;  
 }
