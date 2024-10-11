@@ -1,0 +1,47 @@
+body {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 62.5%;
+    background-color: aqua;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+}
+
+.rotacao-de-foto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.rotacao-de-foto .foto {
+
+}
+
+.conteiner .conteudo {
+    display: none;
+}
+
+.conteiner .conteudo.ativo {
+    display: block;
+}
+
+.conteiner {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.conteudo .titulo {
+    background-color: crimson;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+
