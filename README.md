@@ -6,7 +6,7 @@ Continuando a prática de HTML e CSS puro, acabei a primeira etapa de um site de
 
 ### ⚔️ O desafio
 
-- Construir um para uma empresa fictícia de viagens com fundo e descrições de destinos surrealistas.
+- Construir um site para uma empresa fictícia de viagens com fundo e descrições de destinos surrealistas.
 
 ### 🖼️ Aparência
 
